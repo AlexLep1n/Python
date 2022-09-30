@@ -2,7 +2,7 @@
 
 num = int(input("Задайте список из n чисел: "))
 
-list_of_num = [((1 + 1 / i) ** i) for i in range(1, num + 1)]
+list_of_num = [round(((1 + 1 / i)) ** i, 2) for i in range(1, num + 1)]
 # чтобы видеть, что список формируется
 print(list_of_num)
 
@@ -10,8 +10,8 @@ print(list_of_num)
 def sum_of_num(list):
     sum = 0
     for i in list:
-        if i != ".":
-            sum += round(i, 2)
+        if i != "." and i != "-":
+            sum += i
     return sum
 
 

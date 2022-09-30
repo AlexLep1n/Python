@@ -10,8 +10,8 @@ import math
 import random
 from random import randint
 
-n = int(input('Введите число N: '))
-list = [(i + 1) for i in range( - n - 1, n)]
+n = int(input("Введите число N: "))
+list = [(i + 1) for i in range(-n - 1, n)]
 print(list)
 
 file_list = []
@@ -20,8 +20,14 @@ for i in range(1, n + 1):
 print(file_list)
 
 
-with open('file.txt', 'w') as data:
+with open("file.txt", "w") as data:
     for file_item in file_list:
-        data.write('%s\n' % str(file_item))
-    
+        data.write("%s\n" % str(file_item))
 
+mult_num_from_poz = 1
+
+with open("file.txt", "r") as data:
+    for i in file_list:
+        mult_num_from_poz *= list[int(i)]
+
+print(mult_num_from_poz)

@@ -7,10 +7,9 @@
 def sum_of_numbers(num):
     sum = 0
     for i in str(num):
-        if i != ".":
+        if i != "." and i != '-':
             sum += int(i)
     return sum
-
 
 num = float(input("Введите вещественное число: "))
 print(f"Сумма чисел равна: {sum_of_numbers(num)}")
