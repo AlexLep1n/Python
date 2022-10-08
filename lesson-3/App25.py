@@ -12,4 +12,4 @@ while num > 0:
     b_num += str(num % 2)
     num //= 2
 
-print(b_num)
+print(int(b_num))
