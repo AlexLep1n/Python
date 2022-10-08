@@ -11,9 +11,7 @@ def factorial_of_number(num):
         return factorial_of_number(num - 1) * num
 
 
-a = []
-for i in range(1, num + 1):
-    a.append(i)
+a = [i for i in range(1, num + 1)]
 
 print(a)
 print(f"Факториал числа равен: {factorial_of_number(num)}")
