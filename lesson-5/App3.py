@@ -67,7 +67,7 @@ def game(board, players, messages):
             if check_true:
                 print(f'Поздравляем {players[count % 2]}, Вы выиграли!')
                 win = True
-            else:
+            if counter == 9:
                 print('Ничья!')
                 break
         count += 1
