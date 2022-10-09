@@ -51,4 +51,4 @@ def decode_rle(data):
 
 
 decode = decode_rle(encode_txt)
-print(f'Разкодированные данные: {decode}')
+print(f'Декодированные данные: {decode}')
