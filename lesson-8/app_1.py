@@ -14,11 +14,9 @@ class Matrix:
         # Метод join использует объект map и возвращает строки
         # с разделителем \n
         mtrx = '\n'.join(map(str, self.lst_of_arr))
-        print(mtrx)
         # Метод replace заменяет выбранный элемент строки на указанный
         # Таким образом получаем матрицу в понятном виде
         mtrx = mtrx.replace('[', '').replace(']', '').replace(',', '')
-        print(mtrx)
         return mtrx
 
     def __add__(self, other):
