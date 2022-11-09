@@ -7,6 +7,8 @@ list_of_num = [round(((1 + 1 / i)) ** i, 2) for i in range(1, num + 1)]
 print(list_of_num)
 
 # функция сложения элементов списка
+
+
 def sum_of_num(list):
     sum = 0
     for i in list:
